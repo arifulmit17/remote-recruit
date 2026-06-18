@@ -7,9 +7,11 @@ import img1 from "../assets/image1.png";
 import img2 from "../assets/Rectangle 104.png";
 import img3 from "../assets/logo_rr.svg";
 import img4 from "../assets/rec_2.png"
+import img5 from "../assets/paypal.png"
 
 import Section_title from "../components/Section_title";
 import Section from "../components/section";
+import Section2 from "../components/Section2";
 
 const home = () => {
   return (
@@ -34,7 +36,7 @@ const home = () => {
        <Section sectionNo="1" img1={img1} img2={img2} img3={img3} heading="Global Reach" title="The First Fully Global Job Board, Anywhere, Ever" description="RemoteRecruit is the first fully global job board. We connect talent and businesses across the world, with no paywalls, no fees, and no barriers. With RemoteRecruit, you can find your next opportunity or your next hire, no matter where you are." ></Section>
       </section>
       <section className="w-11/12 mx-auto mt-20">
-       <Section sectionNo="2" img1={img1} img2={img2} img3={img3} heading="Actually Fee Free" title="Fee-Free Forever" description="We don’t charge you fees and we don’t put up paywalls. We’re the bridge that connects job opportunities with the best candidates, with no middleman involved." ></Section>
+       <Section2 sectionNo="2" img1={img5} img2={img2} img3={img3} heading="Actually Fee Free" title="Fee-Free Forever" description="We don’t charge you fees and we don’t put up paywalls. We’re the bridge that connects job opportunities with the best candidates, with no middleman involved." ></Section2>
       </section>
       <section className="w-11/12 mx-auto mt-20">
        <Section sectionNo="3" img1={img1} img2={img4} img3={img1} heading="Custom Profile" title="Showcase Your Talent" description="Personalize your profile with everything that makes you unique. Add an introductory video and other media for a personal touch that stands out to employers and candidates." ></Section>

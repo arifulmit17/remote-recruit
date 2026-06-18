@@ -17,12 +17,14 @@ type SectionProps = {
 
 const Section = (props: SectionProps) => {
   return (
-    <div className="flex  gap-5 m-4">
-      <div className="w-10/12 flex flex-col text-start items-start justify-around gap-5">
-        <Heading heading={props.heading}></Heading>
-        <Section_title title={props.title}></Section_title>
-        <p>{props.description}</p>
-      </div>
+    <>
+     
+      <div className="flex  gap-5 m-4">
+        <div className="w-10/12 flex flex-col text-start items-start justify-around gap-5">
+          <Heading heading={props.heading}></Heading>
+          <Section_title title={props.title}></Section_title>
+          <p>{props.description}</p>
+        </div>
       <div className="w-full relative">
         <div className="absolute -top-10">
           <Ellipsis sectionNo="" size="10"></Ellipsis>
@@ -109,6 +111,8 @@ const Section = (props: SectionProps) => {
         </div>
       </div>
     </div>
+    </>
+    
   );
 };
 
