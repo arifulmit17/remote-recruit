@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Section_title = () => {
+type Section_titleProps = {
+    title?: string;
+};
+
+const Section_title = (props: Section_titleProps) => {
     return (
         <>
             <h4 className="text-3xl font-bold text-black">
-                The First Fully Global Job Board, Anywhere, Ever
+                {props.title}
             </h4>
         </>
     );
