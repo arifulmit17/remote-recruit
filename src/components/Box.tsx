@@ -10,7 +10,7 @@ type BoxProps = {
 
 const Box = ({ image, designation, name, textColor1,textColor2 }: BoxProps) => {
   return (
-    <div className="w-100 h-20 rounded-full flex gap-5 shadow-lg">
+    <div className="w-90 h-20 rounded-full flex gap-5 shadow-lg bg-white" >
       <div className="w-18 h-18 m-2 rounded-full border-amber-200 border-8">
         <img src={image} alt="" className="size-full rounded-full bg-contain" />
       </div>

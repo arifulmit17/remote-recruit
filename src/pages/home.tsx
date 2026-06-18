@@ -5,6 +5,9 @@ import Ellipsis from "../components/Ellipsis";
 import Navbar from "../shared/Navbar";
 import Box from "../components/Box";
 import img1 from "../assets/image1.png";
+import img2 from "../assets/Rectangle 104.png";
+import img3 from "../assets/logo_rr.svg";
+import Section_title from "../components/Section_title";
 
 const home = () => {
   return (
@@ -23,34 +26,53 @@ const home = () => {
             </p>
           </div>
         </div>
-       
       </div>
-       <section className="w-11/12 mx-auto">
-       <div className="flex items-center justify-center text-center m-4">
-        <div>
+      <section className="w-11/12 mx-auto">
+        <div className="flex  gap-5 m-4">
+          <div className="w-10/12 flex flex-col text-start items-start justify-around gap-5">
             <Heading heading="Global Reach"></Heading>
-        <h1 className="text-4xl font-bold text-[#08060D] m-4">
-            The First Fully Global Job Board, Anywhere, Ever
-        </h1>
-        <p>
-            RemoteRecruit connects candidates with opportunities around the world. With today’s remote-first workforce, you need to be able to find the best jobs and the best people for them, wherever they may be.
-        </p>
-
-        </div>
-        <div className="w-full">
-            <Ellipsis></Ellipsis>
-            <div >
-                <img src="" alt="" />
-
+            <Section_title></Section_title>
+            <p>
+              RemoteRecruit connects candidates with opportunities around the
+              world. With today’s remote-first workforce, you need to be able to
+              find the best jobs and the best people for them, wherever they may
+              be.
+            </p>
+          </div>
+          <div className="w-full relative">
+            <div className="absolute -top-10">
+              <Ellipsis size="10"></Ellipsis>
             </div>
-            <Box image={img1} designation="Python Developer" name="Felonious Gru" textColor1="text-[#1E3E85]" textColor2="text-[#11142D]" />
+            <div className="rounded-2xl ml-20 w-100 h-120 shadow-2xl shadow-blue-400 flex flex-col gap-5">
+              <div className="mx-auto mt-5">
+                <img className="w-full" src={img2} alt="" />
+              </div>
+              <div className="absolute bottom-60 -right-10">
+                <Ellipsis size="20" image={img3}></Ellipsis>
+              </div>
 
+              <div className="absolute top-50 -left-5 ">
+                <Box
+                  image={img1}
+                  designation="Python Developer"
+                  name="Felonious Gru"
+                  textColor1="text-[#1E3E85]"
+                  textColor2="text-[#11142D]"
+                />
+              </div>
+              <div className="absolute top-80 -right-10 ">
+                <Box
+                  image={img1}
+                  designation="Front End Wizard"
+                  name="Mel Muselphiem"
+                  textColor1="text-[#52B4DA]"
+                  textColor2="text-[#11142D]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        
-
-       </div>
-            
-        </section>
+      </section>
     </div>
   );
 };
