@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 import Section_title from "./Section_title";
 import Ellipsis from "./Ellipsis";
+import img_point from "../assets/Path 2.png"
 
 import Box from "./Box";
 
@@ -29,6 +30,9 @@ const Section2 = (props: SectionProps) => {
            <h3>Your Membership Tier</h3>
            <h3>Premium</h3>
            <h3>Features</h3>
+           <div>
+            <Ellipsis sectionNo="2" size="10" image={img_point}></Ellipsis>
+           </div>
           </div>
           
           {props.sectionNo === "2" && (

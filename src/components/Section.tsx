@@ -27,7 +27,7 @@ const Section = (props: SectionProps) => {
         </div>
       <div className="w-full relative">
         <div className="absolute -top-10">
-          <Ellipsis sectionNo="" size="10"></Ellipsis>
+          <Ellipsis sectionNo={props.sectionNo} size="10"></Ellipsis>
         </div>
         <div className="rounded-2xl ml-20 w-100 h-120 shadow-2xl shadow-blue-400 flex flex-col gap-5">
           <div className="mx-auto mt-5">
@@ -42,11 +42,11 @@ const Section = (props: SectionProps) => {
               <Ellipsis sectionNo="1" size="20" image={props.img3}></Ellipsis>
             </div>
           )}
-          {props.sectionNo === "2" && (
+          {/* {props.sectionNo === "2" && (
             <div className="absolute bottom-60 -right-10">
               <Ellipsis sectionNo="2" size="20" image={props.img3}></Ellipsis>
             </div>
-          )}
+          )} */}
           {props.sectionNo === "3" && (
             <div className="absolute bottom-60 -right-10">
               <Ellipsis sectionNo="3" size="20" image={props.img3}></Ellipsis>
